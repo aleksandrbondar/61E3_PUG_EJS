@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  head
+    title Express and Pug Example
+    link(rel="stylesheet", href="/style.css")
+
+  body
+    div.container
+      h1.heading Hello from PUG!
+      p
+        a(href=`/`)= 'back to main page'
+      ul.user-list
+        each user in users
+          li.user-item
+            p.user-name
+              a(href=`/users/${user.id}`)= user.name
+            p.user-email= user.email
+            p.user-phone= user.phone

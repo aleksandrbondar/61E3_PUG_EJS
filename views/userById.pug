@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  head
+    title Express and Pug Example
+    link(rel="stylesheet", href="/style.css")
+
+  body
+    div.container
+      h1.heading Hello from PUG!
+      h2.user-name= user.name
+      img.user-photo(src='/trollface.jpg' width='500px')
+      p.user-mail= user.email
+      p.user-phone= user.phone
+      a(href='/users') back
